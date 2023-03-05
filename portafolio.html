@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <!-- Normalizacion -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <nav class="header-navigation">
+          <a href="./index.html" class="header-logo link"
+            ><span class="logo-blue">Web</span>Studio</a
+          >
+          <ul class="header-menu list">
+            <li>
+              <a href="./index.html" class="header-link link">Estudio</a>
+            </li>
+            <li>
+              <a href="./portafolio.html" class="header-link link current"
+                >Portafolio</a
+              >
+            </li>
+            <li>
+              <a href="#" class="header-link link">Contactos</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contacts list">
+          <li>
+            <a href="mailto:info@devstudio.com" class="email link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li>
+            <a href="tel:+525555296000" class="tel link">+52 55 5529 6000</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- Imagenes portafolio -->
+      <section>
+        <div class="container">
+          <ul class="filter list">
+            <li class="filter-item">
+              <button type="button" class="filter-btn button-active">
+                Todo
+              </button>
+              <button type="button" class="filter-btn">Sitios-Web</button>
+              <button type="button" class="filter-btn">Aplicaciones</button>
+              <button type="button" class="filter-btn">Diseño</button>
+              <button type="button" class="filter-btn">Marketing</button>
+            </li>
+          </ul>
+          <ul class="img-portafolio list">
+            <li class="project-icon">
+              <img
+                src="./images/Tecnoduck.jpg"
+                alt="Sitio Web Tecnoduck"
+                width="370"
+              />
+              <h3 class="project-name">Tecnoduck</h3>
+              <p class="project-type">Sitio Web</p>
+            </li>
+            <li class="project-icon">
+              <img
+                src="./images/Poster.jpg"
+                alt="Poster New Orleans"
+                width="370"
+              />
+              <h3 class="project-name">
+                Póster de Nueva Orleans vs Estrella Dorada
+              </h3>
+              <p class="project-type">Diseño</p>
+            </li>
+            <li class="project-icon">
+              <img
+                src="./images/TheSeafood.jpg"
+                alt="Logo Restaurante The Seafood"
+                width="370"
+              />
+              <h3 class="project-name">Restaurante SeaFood</h3>
+              <p class="project-type">Aplicaciones</p>
+            </li>
+            <li class="project-icon">
+              <img
+                src="./images/Audifonos.jpg"
+                alt="Audifonos negros"
+                width="370"
+              />
+              <h3 class="project-name">Proyecto Prime</h3>
+              <p class="project-type">Marketing</p>
+            </li>
+            <li class="project-icon">
+              <img
+                src="./images/Cajas.jpg"
+                alt="Caja blanca y cafe"
+                width="370"
+              />
+              <h3 class="project-name">Proyecto Cajas</h3>
+              <p class="project-type">Aplicaciones</p>
+            </li>
+            <li class="project-icon">
+              <img
+                src="./images/Monitor.jpg"
+                alt="Monitor mostrando sito web"
+                width="370"
+              />
+              <h3 class="project-name">La inspiración no tiene límites</h3>
+              <p class="project-type">Sitio Web</p>
+            </li>
+            <li class="project-icon">
+              <img
+                src="./images/LibroAbierto.jpg"
+                alt="Libro Abierto"
+                width="370"
+              />
+              <h3 class="project-name">Edición Limitada</h3>
+              <p class="project-type">Diseño</p>
+            </li>
+            <li class="project-icon">
+              <img
+                src="./images/TagLab.jpg"
+                alt="Tag de proyecto LAG"
+                width="370"
+              />
+              <h3 class="project-name">Proyecto LAB</h3>
+              <p class="project-type">Marketing</p>
+            </li>
+            <li class="project-icon">
+              <img
+                src="./images/Portatil.jpg"
+                alt="Escribiendo en un Portatil"
+                width="370"
+              />
+              <h3 class="project-name">Negocio en Crecimiento</h3>
+              <p class="project-type">Aplicaciones</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- pie de pagina -->
+    <footer class="footer">
+      <div class="container">
+        <a href="./index.html" class="footer-logo link"
+          ><span class="logo-blue">Web</span>Studio</a
+        >
+        <address class="address">
+          Calz. Ticomán 500, Ciudad de México, CDMX, México
+          <ul class="footer-contacts list">
+            <li class="footer-email">
+              <a href="mailto:info@devstudio.com" class="email link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="footer-tel">
+              <a href="tel:+525555296000" class="tel link">+52 55 5529 6000</a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </footer>
+  </body>
+</html>

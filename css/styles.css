@@ -1,0 +1,447 @@
+/* --------Normalizacion----------  */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+address {
+    font-style: normal;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* -----Global styles----- */
+:root {
+    --primary-text-color: #212121;
+    --secondary-text-color: #757575;
+    --accent-color: #2196F3;
+    --primary-background-color: #ffffff;
+    --secondary-background-color: #2F303A;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    background-color: var(--primary-background-color);
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* .list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+} */
+
+/* ------Estilo Header------ */
+.header-logo {
+    font-family: 'Raleway', sans-serif;
+    color: #000000;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+.logo-blue {
+    color: var(--accent-color);
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+.header-menu {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.header-contacts {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+}
+
+.header {
+    border-bottom: 1px solid #ececec;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0;
+}
+
+.header-link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: inherit;
+}
+
+.header-link:hover,
+.header-link:focus {
+    color: var(--accent-color);
+}
+.header-link.current {
+    color: var(--accent-color);
+}
+
+.tel,
+.email {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+.tel:hover,
+.tel:focus,
+.email:hover,
+.email:focus {
+    color: var(--accent-color);
+}
+
+/* -----franja titulo----- */
+.intro {
+    background-color: var(--secondary-background-color);
+    text-align: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro-title { 
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin: 20px auto;
+    width: 696px;
+}
+
+.intro-btn {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #ffffff;
+    background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+/* -----Qualities----- */
+.section {
+    padding: 94px 0;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.qualities {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+.qualities-title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    display: block;
+    height: 30px;
+    
+
+}
+
+.qualities-description {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    display: block;
+    
+}
+
+.feature-li {
+    width: 240px;
+}
+
+/* p {
+    display: block;
+} */
+
+/* -----titles----- */
+.our-team {
+    background-color: #F5F4FA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 94px;
+}
+
+.activity-title,
+.team-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: inherit;
+    
+}
+
+.img-contenido-trabajo {
+    display: flex;
+    align-items: center;
+    padding-bottom: 94px;                                                                                       
+    padding-top: 55px;
+    justify-content: space-between;
+}
+
+/* -----team description----- */
+.img-equipo {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 94px;
+    padding-top: 55px;
+    
+}
+
+.team-icon {
+    background-color: var(--primary-background-color);
+    text-align: center;
+    list-style: none;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    border: 1px solid #eeeeee;
+    cursor: pointer;
+}
+
+.team-name,
+.team-job-title {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+}
+
+.team-name {
+    font-weight: 500;
+    margin: 30px 0 10px 0;
+}
+
+.team-job-title {
+    color: var(--secondary-text-color);
+    margin-bottom: 30px;
+}
+
+/* -----footer----- */
+.footer {
+    background-color: var(--secondary-background-color);
+    padding: 60px;
+}
+
+.footer-logo {
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 2;
+    letter-spacing: 0.03em;
+    
+}
+
+.address,
+.footer-email,
+.footer-tel { 
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+    width: 231px;
+    margin-top: 3px;
+}
+
+.footer-email,
+.footer-tel {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-email:hover,
+.footer-email:focus {
+    color: var(--accent-color);
+}
+
+.footer-tel:hover,
+.footer-tel:focus {
+    color: var(--accent-color);
+}
+
+
+/* ------PORTAFOLIO------ */
+
+.filter-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    gap: 8px;
+}
+
+.filter-btn {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    background: #F5F4FA;
+    border-radius: 4px;
+    border-style: none;
+    cursor: pointer;
+    padding: 6px 24px;
+}
+
+.button-active {
+    color: white;
+    background-color: var(--accent-color);
+
+}
+
+.filter-btn:hover,
+.filter-btn:focus {
+    background-color: var(--accent-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+}
+
+.project-name {
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+    color: inherit;
+    width: 322px;
+    margin: 20px 24px 0 24px;
+}
+
+.project-type {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--secondary-text-color);
+    width: 322px;
+    margin: 0 24px 20px;    
+}
+
+.project-icon {
+    background-color: var(--primary-background-color);
+    border: 1px solid #EEEEEE;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.project-icon:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.img-portafolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+    padding-bottom: 82px;
+    
+}
+
