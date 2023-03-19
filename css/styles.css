@@ -29,6 +29,15 @@ address {
     font-style: normal;
 }
 
+svg {
+    fill: currentColor;
+}
+
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+
 .link {
     text-decoration: none;
     color: inherit;
@@ -83,14 +92,6 @@ body {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
-/* .list {
-    list-style: none;
-}
-
-.link {
-    text-decoration: none;
-} */
 
 /* ------Estilo Header------ */
 .header-logo {
@@ -185,8 +186,6 @@ body {
     url(../images/Imagen.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 1600px;
-    
 }
 
 .intro-title { 
@@ -252,8 +251,6 @@ body {
     text-transform: uppercase;
     display: block;
     height: 30px;
-    
-
 }
 
 .qualities-description {
@@ -268,10 +265,6 @@ body {
 .feature-li {
     width: 240px;
 }
-
-/* p {
-    display: block;
-} */
 
 /* -----titles----- */
 .our-team {
@@ -291,8 +284,7 @@ body {
     line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
-    color: inherit;
-    
+    color: inherit;    
 }
 
 .customer-title {
@@ -307,14 +299,28 @@ body {
     justify-content: space-between;
 }
 
+.li-relative {
+    position: relative;
+}
+
+.img-description {
+    color: var(--primary-background-color);
+    background-color: rgba(47, 48, 58, 0.8);
+    opacity: 0.8;
+    position: absolute;
+    bottom: 1px;
+    width: 373px;
+    text-align: center;
+    padding: 27px 0 27px 0;
+}
+
 /* -----team description----- */
 .img-equipo {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     padding-bottom: 94px;
-    padding-top: 55px;
-    
+    padding-top: 55px;    
 }
 
 .team-icon {
@@ -357,8 +363,7 @@ body {
     font-weight: 700;
     font-size: 26px;
     line-height: 2;
-    letter-spacing: 0.03em;
-    
+    letter-spacing: 0.03em;    
 }
 
 .address,
@@ -372,7 +377,7 @@ body {
     letter-spacing: 0.03em;
     color: #ffffff;
     width: 231px;
-    margin-top: 3px;
+    margin-top: 7px;
 }
 
 .footer-email,
@@ -420,7 +425,6 @@ body {
 .button-active {
     color: white;
     background-color: var(--accent-color);
-
 }
 
 .filter-btn:hover,
@@ -470,8 +474,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-around;
-    padding-bottom: 82px;
-    
+    padding-bottom: 82px;    
 }
 
 /* --------ICONOS-------- */
@@ -493,35 +496,31 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 30px;
+    gap: 10px;
     padding: 10px 20px;
     margin-bottom: 20px;
     list-style: none;
 }
 
-.hover-icon:hover {
+.hover-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--accent-color);
-    fill: var(--primary-background-color);
+    background-color: var(--primary-background-color);
+    color: #AFB1B8;
     border-radius: 25px;
     cursor: pointer;
     height: 44px;
     width: 44px;
-    
 }
 
-.icon-redes {
-    width: 20px;
-    height: 20px;
-    fill: #AFB1B8;
-    
+.hover-icon:hover {
+    background-color: var(--accent-color);
+    color: var(--primary-background-color);
 }
 
 .icon-customer {
-    fill: #AFB1B8;
-    
+    fill: #AFB1B8;    
 }
 
 .icon-customer:hover {
@@ -554,11 +553,15 @@ body {
     border: solid 1px var(--accent-color);
 }
 
+.footer-container {
+    display: flex;
+}
+
 .redes-footer {
     display: flex;
     color: var(--primary-background-color);
     font-weight: 700;
-    margin-top: -20px;
+    margin-top: 20px;
     margin-bottom: 20px;
     padding-left: 40px;
 }
@@ -588,51 +591,3 @@ body {
 .icon-footer {
     fill: var(--primary-background-color);
 }
-
-.icon-Sobre {
-    fill: var(--secondary-text-color);
-    width: 20px;
-    height: 12px;
-    gap: 10px;
-}
-
-.icon-Sobre:hover,
-.icon-Telefono:hover {
-    fill: var(--accent-color);
-}
-
-.icon-Telefono {
-    fill: var(--secondary-text-color);
-    width: 10px;
-    height: 17px;
-    gap: 10px;
-}
-
-
-
-
-
-
-/* .icon-Logo2 {
-    width: 2em;
-}
-
-.icon-Logo3 {
-    width: 2em;
-}
-
-.icon-Logo4 {
-    width: 2em;
-}
-
-.icon-Logo5 {
-    width: 2em;
-}
-
-.icon-Logo6 {
-    width: 2em;
-}
-
-.icon-Reloj {
-    width: 0.974609375em;
-} */
